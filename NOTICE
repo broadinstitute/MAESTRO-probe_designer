@@ -1,0 +1,18 @@
+MAESTRO Probe Design Tool is distributed, in part, under and subject to the provisions of respective licenses for the following dependencies:
+
+1. numpy
+Copyright (c) 2005 – 2021, NumPy Developers. All rights reserved.
+https://github.com/numpy/numpy/blob/main/LICENSE.txt
+
+2. pandas
+Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team. All rights reserved.
+Copyright (c) 2011-2021, Open source contributors.
+https://github.com/pandas-dev/pandas/blob/master/LICENSE
+
+3. click
+Copyright (c) 2014, Pallets. All rights reserved.
+https://click.palletsprojects.com/en/7.x/license/
+
+4. biopython
+Copyright (c) 1999 – 2021, The Biopython Contributors. All rights reserved.
+https://github.com/biopython/biopython/blob/master/LICENSE.rst
