@@ -1,0 +1,2 @@
+include versioneer.py
+include probe_designer/_version.py
