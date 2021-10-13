@@ -20,7 +20,7 @@ logger = logging.getLogger('ProbeDesigner')
 
 def maf_to_df(maf_file):
     """ Load MAF, return dataframe """
-    df = pd.read_table(maf_file, dtype={'Chromosome': str})
+    df = pd.read_table(maf_file, dtype={'Chromosome': str}, comment="#")
     df.columns = df.columns.str.lower()
     logger.info(f'Found {len(df)} targets in MAF file')
     return df
