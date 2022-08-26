@@ -122,7 +122,7 @@ def get_longest_length(probe, dg_range):
             template.set_length(template.length - 1)
             longest_probe = copy(template)
     else:
-        while template.dg > dg_min:
+        while template.dg >= dg_min:
             previous = copy(template)
             longest_probe = previous
             template.set_length(template.length + 1)
