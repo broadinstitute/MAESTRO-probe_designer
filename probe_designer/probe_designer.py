@@ -2,6 +2,7 @@ import click
 from copy import copy
 import logging
 import pandas as pd
+import numpy as np
 
 from probe_designer import __version__
 from .sequence import Probe
@@ -112,6 +113,9 @@ def create_probes(maf_df, probe_length, fasta, thermo, dg_range,
 def get_longest_length(probe, dg_range):
     template = copy(probe)
     dg_min, dg_max = dg_range
+    # non-ACGT bases cause dg = nan
+    if np.isnan(template.dg):
+        return template
     if template.dg < dg_min:
         while template.dg < dg_min:
             previous = copy(template)
